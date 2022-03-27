@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+a{
+    text-decoration: none;
+    color: blue;
+}
+.content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.content__left{
+    margin-right: 20px;
+    width: 400px;
+    background-color: #fff;
+    padding: 30px;
+}
+.description{
+    display: flex;
+    align-items: center;
+}
+.description__img{
+    margin-right: 40px;
+    width: 80px
+}
+.description__img img{
+    width: 100%;
+    border-radius: 50%;
+}
+.name{
+    font-size: 18px;
+    font-weight: 700;
+}
+.subcategory{
+    display: flex;
+    align-items: center;
+}
+.subcategory .username{
+    margin-right: 30px;
+}
+.profile__numbers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.profile__info{
+    text-align: center;
+}
+.numbers{
+    font-weight: 700;
+}
+.pro__info{
+    margin-top: 15px;
+}
+.pro__info .desc{
+    font-size: 12px;
+    font-weight: 200;
+}
+.pro__info .heading{
+    font-size: 14px;
+    font-weight: 700;
+}
+.content__right{
+    margin-right: 20px;
+    width: 670px;
+    background-color: #fff;
+    padding: 30px;
+}
+.posts{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.post__heading{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 10px;
+}
+.post__image{
+    padding: 10px;
+}
+.posts .post__image img{
+    width: 180px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 600px) {
+    .content {
+      flex-direction: column;
+    }
+    .content__left{
+        width: 100vw;
+    }
+    .content__right{
+        margin-top: 20px;
+        width: 100vw;
+    }
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  @media only screen and (max-width: 460px){
+    .posts .post__image img {
+        width: 100%;
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
